@@ -8,7 +8,7 @@ class NativeListviewItem extends Component {
     super(props);
     this.onUpdateView = this.onUpdateView.bind(this);
     this.state = {
-      innerRowID: this.props.rowID
+      innerRowID: this.props.rowId
     };
   }
 
@@ -17,10 +17,10 @@ class NativeListviewItem extends Component {
   }
 
   onUpdateView(event) {
-    const { rowID } = event.nativeEvent;
-    if (this.state.innerRowID !== rowID) {
-      this.props.rowID = rowID;
-      this.setState({ innerRowID: rowID });
+    const { rowId } = event.nativeEvent;
+    if (this.state.innerRowID !== rowId) {
+      this.props.rowId = rowId;
+      this.setState({ innerRowID: rowId });
     }
   }
 
@@ -37,12 +37,12 @@ class NativeListviewItem extends Component {
 }
 
 NativeListviewItem.propTypes = {
-  rowID: React.PropTypes.number,
+  rowId: React.PropTypes.number,
   renderRow: React.PropTypes.func.isRequired
 };
 
 NativeListviewItem.defaultProps = {
-  rowID: -1,
+  rowId: -1,
   renderRow: undefined
 };
 
