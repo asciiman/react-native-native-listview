@@ -29,7 +29,7 @@ You will still need to manually add the imports and `createReactInstanceManager(
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add the following imports to the top of the file
     ```java
     import com.facebook.infer.annotation.Assertions;
