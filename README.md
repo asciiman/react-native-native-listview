@@ -5,7 +5,7 @@ Implements native ListView component for android and iOS.  This component uses t
 
 ## Credits
 
-This code is based on Tal Kol's blog (Recycling Rows For High Performance React Native List Views)[https://medium.com/@talkol/recycling-rows-for-high-performance-react-native-list-views-628fd0363861#.er0u0orbx] and his (list-view-experiments)[https://github.com/wix/list-view-experiments] code for iOS.  For Android the code is based on droidwolf's (react-native-RealRecyclerView)[https://github.com/droidwolf/react-native-RealRecyclerView] library.  The code here is used with permission from both authors.
+This code is based on Tal Kol's blog [Recycling Rows For High Performance React Native List Views](https://medium.com/@talkol/recycling-rows-for-high-performance-react-native-list-views-628fd0363861#.er0u0orbx) and his [list-view-experiments](https://github.com/wix/list-view-experiments) code for iOS.  For Android the code is based on droidwolf's [react-native-RealRecyclerView](https://github.com/droidwolf/react-native-RealRecyclerView) library.  The code here is used with permission from both authors.
 
 ## Getting started
 
