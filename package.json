@@ -2,7 +2,15 @@
 {
   "name": "react-native-native-listview",
   "version": "1.0.0",
-  "description": "",
+  "description": "High-performance native iOS/Android ListView component for React Native",
+  "keywords": "ListView, react-native, recycler, native",
+  "bugs": {
+    "url": "https://github.com/asciiman/react-native-native-listview/issues"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/asciiman/react-native-native-listview.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
