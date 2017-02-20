@@ -16,7 +16,7 @@ class NativeListview extends Component {
     for (let i = 0; i < rowsToRender; i++) {
       items.push(
         <NativeListviewItem
-          rowId={i}
+          rowID={i}
           type={2}
           renderRow={renderRow}
           key={'r_' + i}
