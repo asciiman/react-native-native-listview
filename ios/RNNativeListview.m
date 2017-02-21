@@ -142,6 +142,7 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
 {
   [[cell contentView] setBackgroundColor:[UIColor clearColor]];
   cell.backgroundColor = [UIColor clearColor];
+  cell.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 @end
