@@ -80,6 +80,7 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
   _tableView.dataSource = self;
   _tableView.delegate = self;
   _tableView.backgroundColor = [UIColor clearColor];
+  [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
   [self addSubview:_tableView];
 }
 
@@ -95,8 +96,6 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
 
 - (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:(NSInteger)section
 {
-  NSLog(@"************** numRows:");
-  NSLog(@"%i", self.numRows);
   return self.numRows;
 }
 
