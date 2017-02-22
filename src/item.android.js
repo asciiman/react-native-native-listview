@@ -7,43 +7,32 @@ class NativeListviewItem extends Component {
   constructor(props) {
     super(props);
     this.onUpdateView = this.onUpdateView.bind(this);
-    this.state = {
-      innerRowID: this.props.rowId
-    };
-  }
-
-  componentWillUnmount() {
-    this.props.renderRow = undefined;
+    this.state = { innerRowID: this.props.rowID };
   }
 
   onUpdateView(event) {
-    const { rowId } = event.nativeEvent;
-    if (this.state.innerRowID !== rowId) {
-      this.props.rowId = rowId;
-      this.setState({ innerRowID: rowId });
+    const { rowID } = event.nativeEvent;
+    if (this.state.innerRowID !== rowID) {
+      this.setState({ innerRowID: rowID });
     }
   }
 
   render() {
+    const innerRowID = this.state.innerRowID;
     return (
       <RNNativeListviewItemView
         {...this.props}
         onUpdateView={this.onUpdateView}
-      >
-				{this.props.renderRow(this.state.innerRowID)}
+			>
+				{this.props.renderRow(innerRowID)}
 			</RNNativeListviewItemView>
 		);
   }
 }
 
 NativeListviewItem.propTypes = {
-  rowId: React.PropTypes.number,
+  rowID: React.PropTypes.number,
   renderRow: React.PropTypes.func.isRequired
-};
-
-NativeListviewItem.defaultProps = {
-  rowId: -1,
-  renderRow: undefined
 };
 
 export default NativeListviewItem;
