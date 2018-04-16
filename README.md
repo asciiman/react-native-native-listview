@@ -1,3 +1,4 @@
+# DEPRECATED
 
 This library has been deprecated and is no longer maintained now that React Native includes the [FlatList](https://facebook.github.io/react-native/docs/flatlist.html) component.  Flat list also uses a row recycler.
 
