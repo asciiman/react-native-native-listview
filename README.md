@@ -1,4 +1,6 @@
 
+This library has been deprecated and is no longer maintained now that React Native includes the [FlatList](https://facebook.github.io/react-native/docs/flatlist.html) component.  Flat list also uses a row recycler.
+
 # react-native-native-listview
 
 Implements native ListView component for android and iOS.  This component uses the row recycler approach.  Use this to get high performance if your use case consists of nearly identical rows with a very large data-source.  React Native's built in Listview performs better with the use case of high variation between rows and a smaller data-source (like the facebook news feed).  You should probably stick to the stock implementation if your use case is the latter.
