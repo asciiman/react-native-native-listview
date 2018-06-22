@@ -1,6 +1,6 @@
 {
   "name": "react-native-native-listview",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "High-performance native iOS/Android ListView component for React Native",
   "keywords": [
     "react-native"
